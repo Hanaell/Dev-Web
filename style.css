@@ -16,7 +16,9 @@ h1 {
 }
 
 img { 
-    width: 2000px;
+    width: 1000px;
+    display: block;
+    margin: 0 auto ;
 }
 
 h2{
