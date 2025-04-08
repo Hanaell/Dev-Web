@@ -1,5 +1,18 @@
+body{
+    background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
 h1 { 
     color: rgb(145, 91, 91); 
+    text-align: center;
 }
 
 img { 
@@ -8,19 +21,17 @@ img {
 
 h2{
     color:blue; font-size: 50px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
 }
 
 .container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 60px;
-    padding: 14px 40px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-
+    justify-content: center;
+    padding-top: 20px;
+    height:40px;
 }
 
