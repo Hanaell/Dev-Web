@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie d'images</title>
+    <style>
+        body {
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+        .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        }
+        .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        height:40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Galerie Dynamique 📷</h1>
+    <div class="gallery">
+        {% for img_url in images %}
+            <img src="{{ img_url }}" alt="Image">
+        {% endfor %}
+    </div>
+
+    <div class="container">
+        <a href="{{ url_for('page_acceuil')}}">
+        <button>Page suivante</button></a>
+    </div>
+</body>
+</html>

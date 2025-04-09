@@ -28,7 +28,10 @@
         <img src="{{url_for('static', filename ='Images/23.jpg')}}" class="photo">
         <img src="{{url_for('static', filename ='Images/opo.jpg')}}" class="photo">
     </div>
-
+    <div class="container">
+        <a href="{{ url_for('page_gallery_dynamique')}}">
+        <button>Page suivante</button></a>
+      </div>
     <a href="{{url_for('page_acceuil')}}" class="retour">Retour à la page d'accueil</a>
      
 </body>
