@@ -11,9 +11,10 @@
         }
         .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale */
         gap: 20px;
         }
+
         .gallery img {
         width: 100%;
         height: auto;
@@ -31,16 +32,30 @@
         body {
         margin: 0;
         padding: 0;
-        background-image: url("{{ url_for('static', filename='Images/trump-2024-trump.gif') }}");
+        background-image: url("{{ url_for('static', filename='image_2/trump-2024-trump.gif') }}");
         background-size: cover;        
         background-position: center;   
         height: 100vh;                  
         }
-
+        @keyframes neon-glow {
+            0%, 100% {
+            text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+            }
+            50% {
+            text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+            }
+        }
+        
+        .neon-text {
+            color: #fff;
+            font-size: 48px;
+            text-align: center;
+            animation: neon-glow 1.5s infinite alternate;
+        }
     </style>
 </head>
 <body>
-    <h1>Galerie Dynamique 📷</h1>
+    <h1 class="neon-text">🔥 GALERIE DU KIFF 🔥 </h1>
     <div class="gallery">
         {% for img_url in images %}
             <img src="{{ img_url }}" alt="Image">
