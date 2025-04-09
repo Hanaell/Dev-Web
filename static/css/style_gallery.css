@@ -1,5 +1,5 @@
 body{
-    background-image: url(Images/flamme2.jpeg);
+    
     background-size: 1350px;
    
 }
@@ -10,6 +10,7 @@ body{
     background-color: aliceblue;
 
  }
+
 p{
     text-align: center;
     color: black;

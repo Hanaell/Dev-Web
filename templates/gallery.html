@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nouvelle Page</title>
-    <link rel="stylesheet" href="style_gallery.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style_gallery.css')}}">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='Images/flamme2.jpeg') }}");
+        }
+    </style>
 </head>
 <body>
     
@@ -16,16 +21,16 @@
 
     
     <div class="container">
-        <img src="Images/aa5.jpg" class="photo">
-        <img src="Images/téléchargement (1).jpeg" class="photo">
-        <img src="Images/corvette.jpeg" class="photo">
-        <img src="Images/bugatti.jpg" class="photo">
-        <img src="Images/23.jpg" class="photo">
-        <img src="Images/opo.jpg" class="photo">
+        <img src="{{url_for('static', filename ='Images/aa5.jpg')}}" class="photo">
+        <img src="{{url_for('static', filename ='Images/téléchargement (1).jpeg')}}" class="photo">
+        <img src="{{url_for('static', filename ='Images/corvette.jpeg')}}" class="photo">
+        <img src="{{url_for('static', filename ='Images/bugatti.jpg')}}" class="photo">
+        <img src="{{url_for('static', filename ='Images/23.jpg')}}" class="photo">
+        <img src="{{url_for('static', filename ='Images/opo.jpg')}}" class="photo">
     </div>
 
-    <a href="index.html" class="retour">Retour à la page d'accueil</a>
-
+    <a href="{{url_for('page_acceuil')}}" class="retour">Retour à la page d'accueil</a>
+     
 </body>
 </html>
 
