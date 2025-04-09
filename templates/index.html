@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Mon histoire web</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
   </head>
   <body>
   
@@ -20,7 +20,7 @@
           <button>Page suivante</button></a>
         </div>
 
-      <img src="Images/nissan_gtr.png">
+      <img src="{{url_for('static', filename ='Images/nissan_gtr.png')}}">
       
         <div class="container">
           <a href="gallery.html">
