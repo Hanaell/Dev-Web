@@ -6,7 +6,7 @@
     <style>
         body {
         font-family: sans-serif;
-        background-color: #f2f2f2;
+        background-color: ;
         padding: 20px;
         }
         .gallery {
@@ -27,7 +27,16 @@
         padding-top: 20px;
         height:40px;
         }
-        
+
+        body {
+        margin: 0;
+        padding: 0;
+        background-image: url("{{ url_for('static', filename='Images/trump-2024-trump.gif') }}");
+        background-size: cover;        
+        background-position: center;   
+        height: 100vh;                  
+        }
+
     </style>
 </head>
 <body>

@@ -6,10 +6,24 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Mon histoire web</title>
       <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+      <style>
+      
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("{{ url_for('static', filename='Images/giphy.webp') }}");
+        background-size: cover;        
+        background-position: center;   
+        height: 100vh;                  
+      }
+      </style>
+      
   </head>
   <body>
+
   
-    <h1>WELCOME TO VROUM VROUM LAND</h1>
+    <h1 class="neon-text"> WELCOME TO VROUM VROUM LAND</h1>
+ 
   
       <h2> COMING SOON </h2>
   

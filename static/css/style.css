@@ -1,12 +1,13 @@
-body{
-    background-color: lightblue;
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("static/Images/giphy.webp");
+    background-size: cover;         /* Pour que l'image prenne tout l'écran */
+    background-repeat: no-repeat;   /* Pour éviter la répétition */
+    background-position: center;    /* Centrer l'image */
+    height: 100vh;                  /* Hauteur totale de la fenêtre */
 }
 
-
-h1 { 
-    color: rgb(145, 91, 91); 
-    text-align: center;
-}
 
 img { 
     width: 1000px;
@@ -29,4 +30,20 @@ p{
     padding-top: 20px;
     height:40px;
 }
+
+@keyframes neon-glow {
+    0%, 100% {
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    50% {
+      text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    }
+  }
+  
+  .neon-text {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    animation: neon-glow 1.5s infinite alternate;
+  }
 
